@@ -45,6 +45,9 @@ describe('ToolHeaderComponent', () => {
     it('will update header text correctly', () => {
       const expectedHeaderText = 'Car Tool';
       const actualHeaderText = fixture.debugElement.query(By.css('h1')).nativeElement.innerText;
+
+      console.log(actualHeaderText);
+
       expect(actualHeaderText).toEqual(expectedHeaderText);
     });
   });
