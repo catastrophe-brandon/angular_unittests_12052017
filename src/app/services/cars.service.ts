@@ -15,8 +15,7 @@ export class CarsService {
   }
 
   append(car: Car) {
-    this.cars = this.cars.concat({ ...car } as Car);
-    // this.cars = this.cars.concat(car);
+    this.cars = this.cars.concat(new Car(car.make, car.model, car.year));
   }
 
 }
